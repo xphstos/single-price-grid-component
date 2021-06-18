@@ -1,9 +1,14 @@
+@use "sass:color" as *;
+
 // Project Variables
 :root {
-	--dark-blue: hsl(233, 47%, 7%);
-	--desat-blue: hsl(244, 38%, 16%);
-	--accent: hsl(277, 64%, 61%);
+	--cyan: hsl(179, 62%, 43%);
+	--cyan-dark: #{scale(hsl(179, 62%, 43%), $lightness: -30%)};
+	--cyan-light: #{scale(hsl(179, 62%, 43%), $lightness: 7%)};
+	--yellow: hsl(71, 73%, 54%);
+	--yellow-dark: #{scale(hsl(71, 73%, 54%), $lightness: -50%)};
+	--grey-light: hsl(204, 43%, 93%);
+	--grey-blue: hsl(218, 22%, 67%);
+	--grey-blue-dark: #{scale(hsl(218, 22%, 67%), $lightness: -30%)};
 	--white: hsl(0, 0%, 100%);
-	--white-trans: hsla(0, 0%, 100%, 0.75);
-	--white-trans-2: hsla(0, 0%, 100%, 0.6);
 }
